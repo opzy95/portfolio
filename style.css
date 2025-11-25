@@ -3,17 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    width: 100%;
-    
+body{
+    background-color: white;
 }
+
 .container{
-    background-color: white
+    background-color: white;
+    width: 100%;
+}
+.menu{
+    width: 30px;
 }
 nav{
     width: 100%;
-    background-color: antiquewhite;
-    
+    background-color: wheat;   
 }
 nav a{
     text-decoration: none;
@@ -23,13 +26,14 @@ nav a:hover{
 }
 nav ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 nav ul li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 nav li{
     height: 50px;
@@ -41,6 +45,7 @@ nav li:first-child{
     margin-right: auto;
     font-size: 20px;
     font-weight: 900px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .img-top{
     width: 300px;
@@ -106,7 +111,7 @@ nav li:first-child{
    .sec3 p{
     /* width: 40rem; */
     color: rgb(37, 43, 66);
-    font-size: 25px;
+    font-size: 24px;
      margin: 10px auto;
      line-height: 40px;
      text-align: center;
@@ -123,7 +128,7 @@ nav li:first-child{
    }
    .project{
     display: flex;
-    flex-direction: ;
+    /* flex-direction: ; */
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px auto;
@@ -143,11 +148,33 @@ nav li:first-child{
     border-radius: 15px;
     /* border: 2px solid red; */
    }
+   .mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 200px;
+    background-color: wheat;
+    display: none;
+    
+   }
+   .mobile li{
+    width: 100%;
+   }
+   .mobile ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: flex-start;
+   }
+   .mobile a{
+    width: 100%;
+   }
    .icon{
     width: 30px;
    }
    .sec4 p{
-    font-size: 24px;
+    font-size: 22px;
     color: rgb(37, 43, 66);
     text-align: center;
    }
@@ -246,4 +273,93 @@ nav li:first-child{
     }
     .all{
         display: flex;
+    }
+    @media screen and (max-width: 480px) {
+        .container{
+            width: 100%;
+        }
+        .container section{
+            width: 100%;
+        }
+        .sec1{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .name{
+            display: flex;
+            flex-direction: column;
+        }
+        .img-top{
+            width: 85%;
+            align-items: center;
+        }
+        .sec2{
+            width: 80%;
+            margin: 10px auto;
+        }
+        .sec2 p{
+            width: 80%;
+        }
+        .project-all{
+            width: 60%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin: 2px auto;
+        }
+        .sec3 p{
+            width: 10rem;
+        }
+        .sec4{
+            width: 90%;
+        }
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 95%;
+        }
+        .form-in{
+            width: 90%;
+        }
+        textarea{
+            width: 90%;
+            height: 170px;
+        }
+       .form-all{
+        width: 80%;
+        margin: 10px auto;
+       }
+       .location{
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
+      
+       }
+       .sec4 p{
+        font-size: 14px;
+       }
+       .all{
+        display: flex;
+        flex-direction: column;
+       }
+       .bottom{
+        width: 15rem;
+       }
+       .foot{
+        font-size: 16px;
+       }
+      .hide{
+        display: none;
+      }
+      .menu{
+        display: flex;
+        margin-left: auto;
+        position: relative;
+      }
+      .menu:hover .mobile{
+        display: block;
+      }
+       
     }
