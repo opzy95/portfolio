@@ -101,7 +101,7 @@ nav li:first-child{
    margin: 10px auto;
    }
    .sec3 h1{
-     color: rgb(37, 43, 66);;
+     color: rgb(37, 43, 66);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     font-weight: 700px;
@@ -155,9 +155,11 @@ nav li:first-child{
     height: 300px;
     width: 200px;
     background-color: wheat;
-    display: none;
-    
+    display: none; 
    }
+    .mobile1{
+            display: none;
+        }
    .mobile li{
     width: 100%;
    }
@@ -277,14 +279,17 @@ nav li:first-child{
     @media screen and (max-width: 480px) {
         .container{
             width: 100%;
+           
         }
         .container section{
             width: 100%;
+          
         }
         .sec1{
             display: flex;
             flex-direction: column;
         }
+       
         
         .name{
             display: flex;
@@ -293,13 +298,17 @@ nav li:first-child{
         .img-top{
             width: 85%;
             align-items: center;
+            border-radius: 50%;
+            /* height: 60%; */
         }
         .sec2{
             width: 80%;
             margin: 10px auto;
         }
         .sec2 p{
-            width: 80%;
+            width: 90%;
+            font-size: 16px;
+
         }
         .project-all{
             width: 60%;
@@ -348,7 +357,7 @@ nav li:first-child{
         width: 15rem;
        }
        .foot{
-        font-size: 16px;
+        font-size: 12px;
        }
       .hide{
         display: none;
@@ -361,5 +370,15 @@ nav li:first-child{
       .menu:hover .mobile{
         display: block;
       }
+      .drop{
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        
+      }
+       .mobile1{
+            display: block;
+        }
        
     }
